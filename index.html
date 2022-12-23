@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>CSS Snippet Cheatsheet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
+
+<header>
+    <div class="pagetitle"><h1>CSS Snippet Cheatsheet</h1></div>
+    <div class="subtitle">Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all the code for you to copy.</div>
+</header>
+<body>
+    <section class="columns">
+        <div class="card">
+            <div class="card-title">
+                <h2>Flexbox Row</h2>
+                Use these three properties to create a flexbox row layout.
+            </div>
+            <div class="codebox">
+                .row {<br>
+                &nbsp;&nbsp;display: flex;<br>
+                &nbsp;&nbsp;flex-direction: row;<br>
+                &nbsp;&nbsp;flex-wrap: wrap;<br>
+                }
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <h2>Flexbox Column</h2>
+                Use this to create a flexbox column layout.
+            </div>
+            <div class="codebox">
+                .column {<br>
+                &nbsp;&nbsp;display: flex;<br>
+                &nbsp;&nbsp;flex-direction: column;<br>
+                }
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <h2>CSS Grid Layout</h2>
+                Build a 12-column layout using CSS Grid.
+            </div>
+            <div class="codebox">
+                .grid {<br>
+                &nbsp;&nbsp;display: grid;<br>
+                &nbsp;&nbsp;width:100%;<br>
+                &nbsp;&nbsp;grid-template-columns:<br>
+                repeat(12, 1fr);<br>
+                }
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <h2>Linear Gradients</h2>
+                This will create a background linear gradient from top to bottom.
+            </div>
+            <div class="codebox">
+                .linear-gradient-background {<br>
+                &nbsp;&nbsp;background-image: linear-<br>
+                gradient(<br>
+                &nbsp;&nbsp;rgba(232, 102, 236, 0.3) 0%,<br>
+                &nbsp;&nbsp;rgba(232, 102, 236, 0.6) 100%<br>
+                );<br>
+                }
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <h2>Box Transition Glow</h2>
+                Use transition and box shadows to glow on hover.
+            </div>
+            <div class="codebox">
+                .code-card ,card-header {<br>
+                &nbsp;&nbsp;border-radius: 8px;<br>
+                &nbsp;&nbsp;transition: all 0.5s ease-in-<br>
+                out;<br>
+                }<br>
+                <br>
+                .code-card:hover,<br>
+                .code-card:hover .card-header {<br>
+                &nbsp;&nbsp;box-shadow: inset 0px 0px 8px<br>
+                rgba(232, 102, 236, 1), 0 0 15px<br>
+                rgba(232, 102, 236, 1);<br>
+                }
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <h2>Overlay Card with Title</h2>
+                Use position properties and negative margins to raise elements higher than their natural starting point.
+            </div>
+            <div class="codebox">
+                .card-header {<br>
+                &nbsp;&nbsp;position: relative;<br>
+                &nbsp;&nbsp;margin-top: -20px;<br>
+                }
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h2>Made with ❤️ and CSS</h2>
+    </footer>
+</body>
+</html>
